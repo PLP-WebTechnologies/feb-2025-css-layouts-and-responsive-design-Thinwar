@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Flexbox and Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <nav class="navbar">
+        <div class="logo">FlexGrid</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    
+   
+    <header class="hero">
+        <h1>Modern Responsive Design</h1>
+        <p>A showcase of Flexbox and CSS Grid working together to create beautiful, responsive layouts that adapt to any screen size.</p>
+        <button class="cta-button">Learn More</button>
+    </header>
+    
+    
+    <main class="main-content">
+        
+        <section class="features">
+            <div class="feature-card">
+                <div class="icon">🎨</div>
+                <h3>Flexbox Layout</h3>
+                <p>Flexible box layout for one-dimensional content distribution and alignment.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Adapts fluidly to different screen sizes using media queries.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🏢</div>
+                <h3>CSS Grid</h3>
+                <p>Two-dimensional grid system for complex layout structures.</p>
+            </div>
+        </section>
+        
+        
+        <section class="content-grid">
+            <div class="main-articles">
+                <article class="article">
+                    <div class="article-img"></div>
+                    <div class="article-content">
+                        <h3>Mastering Flexbox</h3>
+                        <p>Learn how to use Flexbox for navigation bars, hero sections, and content alignment.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article-img"></div>
+                    <div class="article-content">
+                        <h3>Grid Layout Patterns</h3>
+                        <p>Explore common grid patterns for responsive content organization and structure.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article-img"></div>
+                    <div class="article-content">
+                        <h3>Mobile-First Approach</h3>
+                        <p>Why starting with mobile designs leads to better responsive layouts.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article-img"></div>
+                    <div class="article-content">
+                        <h3>Media Query Breakpoints</h3>
+                        <p>Setting the right breakpoints for different device categories.</p>
+                    </div>
+                </article>
+            </div>
+            
+            <aside class="sidebar">
+                <h3>Popular Topics</h3>
+                <ul class="sidebar-links">
+                    <li><a href="#">CSS Variables</a></li>
+                    <li><a href="#">Responsive Typography</a></li>
+                    <li><a href="#">Layout Debugging</a></li>
+                    <li><a href="#">Performance Optimization</a></li>
+                    <li><a href="#">Browser Compatibility</a></li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We create modern web layouts that are responsive, accessible, and beautiful across all devices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="footer-links">
+                    <li>Email: info@flexgrid.com</li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Address: 123 Web Design St.</li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 FlexGrid. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
